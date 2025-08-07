@@ -75,6 +75,30 @@ make
 ./test.sh
 ```
 
+## 実行環境
+
+### 1. Pythonシミュレーター（推奨）
+CISC-16-Aアーキテクチャの完全シミュレーション：
+```bash
+python3 simulator.py os_nasm.bin
+```
+
+### 2. QEMUエミュレーション
+x86システムでの実行（実験的）：
+```bash
+sudo apt-get install qemu-system-x86
+./run_qemu.sh
+```
+
+### 3. DOSBoxエミュレーション
+クラシックPC環境での実行：
+```bash
+sudo apt-get install dosbox
+./run_dosbox.sh
+```
+
+詳細な実行手順は `EXECUTION_GUIDE.md` を参照してください。
+
 ## ライセンス
 
 本OSは教育・研究目的で作成されています。自由に改変・配布可能です。
